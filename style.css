@@ -1,0 +1,53 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* Category Sections */
+.category {
+    background-color: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.category h2 {
+    color: #003366;
+}
+
+/* Links */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #0056b3;
+}
+

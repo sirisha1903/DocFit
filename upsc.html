@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC - DocFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>UPSC 2025 - Document Upload</h1>
+    </header>
+
+    <main>
+        <section class="doc-section">
+            <h2>📷 Passport Size Photo</h2>
+            <p><strong>Resolution:</strong> 200×230 px (min) to 420×530 px (max)</p>
+            <p><strong>File Size:</strong> 20 KB - 300 KB</p>
+            <input type="file" id="upscPhotoUpload" accept="image/*">
+            <button onclick="resizeImage('upscPhotoUpload', 420, 530)">Resize & Download</button>
+        </section>
+
+        <section class="doc-section">
+            <h2>✍️ Signature</h2>
+            <p><strong>Resolution:</strong> 110×140 px (min) to 140×160 px (max)</p>
+            <p><strong>File Size:</strong> 10 KB - 40 KB</p>
+            <input type="file" id="upscSignatureUpload" accept="image/*">
+            <button onclick="resizeImage('upscSignatureUpload', 140, 160)">Resize & Download</button>
+        </section>
+
+        <section class="doc-section">
+            <h2>🆔 Aadhaar Card</h2>
+            <p><strong>Accepted Formats:</strong> JPG, PNG, PDF</p>
+            <input type="file" id="upscAadhaarUpload" accept=".jpg, .png, .pdf">
+            <button onclick="downloadFile('upscAadhaarUpload')">Download</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

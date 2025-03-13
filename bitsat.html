@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITSAT - DocFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BITSAT 2025 - Document Upload</h1>
+    </header>
+
+    <main>
+        <section class="doc-section">
+            <h2>📷 Passport Size Photo</h2>
+            <p><strong>Resolution:</strong> 200×240 px (min) to 240×300 px (max)</p>
+            <p><strong>File Size:</strong> 4 KB - 100 KB</p>
+            <input type="file" id="bitsatPhotoUpload" accept="image/*">
+            <button onclick="resizeImage('bitsatPhotoUpload', 240, 300)">Resize & Download</button>
+        </section>
+
+        <section class="doc-section">
+            <h2>✍️ Signature</h2>
+            <p><strong>Resolution:</strong> 100×50 px (min) to 150×60 px (max)</p>
+            <p><strong>File Size:</strong> 1 KB - 40 KB</p>
+            <input type="file" id="bitsatSignatureUpload" accept="image/*">
+            <button onclick="resizeImage('bitsatSignatureUpload', 150, 60)">Resize & Download</button>
+        </section>
+
+        <section class="doc-section">
+            <h2>🆔 Aadhaar Card</h2>
+            <p><strong>Accepted Formats:</strong> JPG, PNG, PDF</p>
+            <input type="file" id="bitsatAadhaarUpload" accept=".jpg, .png, .pdf">
+            <button onclick="downloadFile('bitsatAadhaarUpload')">Download</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

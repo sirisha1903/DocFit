@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE 2025 - DocFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>GATE 2025 - Document Upload</h1>
+        <p>Ensure your documents meet the required specifications before uploading.</p>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!-- Passport Size Photo Card -->
+            <div class="card">
+                <h2>📷 Passport Size Photo</h2>
+                <p><strong>Resolution:</strong> 200×260 px (min) to 530×690 px (max)</p>
+                <p><strong>File Size:</strong> 5 KB - 1 MB</p>
+                <p><strong>Format:</strong> JPG / PNG</p>
+                <input type="file" id="gatePhotoUpload" accept="image/*">
+                <button onclick="resizeImage('gatePhotoUpload', 530, 690)">Resize & Download</button>
+            </div>
+
+            <!-- Signature Card -->
+            <div class="card">
+                <h2>✍️ Signature</h2>
+                <p><strong>Resolution:</strong> 250×80 px (min) to 580×180 px (max)</p>
+                <p><strong>File Size:</strong> 3 KB - 1 MB</p>
+                <p><strong>Format:</strong> JPG / PNG</p>
+                <input type="file" id="gateSignatureUpload" accept="image/*">
+                <button onclick="resizeImage('gateSignatureUpload', 580, 180)">Resize & Download</button>
+            </div>
+
+            <!-- Aadhaar Card -->
+            <div class="card">
+                <h2>🆔 Aadhaar Card</h2>
+                <p><strong>Accepted Formats:</strong> JPG, PNG, PDF</p>
+                <input type="file" id="gateAadhaarUpload" accept=".jpg, .png, .pdf">
+                <button onclick="downloadFile('gateAadhaarUpload')">Download</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+

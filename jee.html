@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE - DocFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JEE 2025 - Document Upload</h1>
+    </header>
+
+    <main>
+        <section class="doc-section">
+            <h2>📷 Passport Size Photo</h2>
+            <p><strong>Resolution:</strong> 200×300 px (min) to 350×450 px (max)</p>
+            <p><strong>File Size:</strong> 10 KB - 200 KB</p>
+            <input type="file" id="jeePhotoUpload" accept="image/*">
+            <button onclick="resizeImage('jeePhotoUpload', 350, 450)">Resize & Download</button>
+        </section>
+
+        <section class="doc-section">
+            <h2>✍️ Signature</h2>
+            <p><strong>Resolution:</strong> 70×30 px (min) to 160×60 px (max)</p>
+            <p><strong>File Size:</strong> 4 KB - 30 KB</p>
+            <input type="file" id="jeeSignatureUpload" accept="image/*">
+            <button onclick="resizeImage('jeeSignatureUpload', 160, 60)">Resize & Download</button>
+        </section>
+
+        <section class="doc-section">
+            <h2>🆔 Aadhaar Card</h2>
+            <p><strong>Accepted Formats:</strong> JPG, PNG, PDF</p>
+            <input type="file" id="jeeAadhaarUpload" accept=".jpg, .png, .pdf">
+            <button onclick="downloadFile('jeeAadhaarUpload')">Download</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
