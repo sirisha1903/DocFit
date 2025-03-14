@@ -8,7 +8,7 @@ function resizeImage(inputId, maxWidth, maxHeight) {
             img.src = e.target.result;
 
             img.onload = function () {
-                // Calculate new dimensions while maintaining aspect ratio
+               
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
 
@@ -34,8 +34,8 @@ function resizeImage(inputId, maxWidth, maxHeight) {
                     link.download = `resized_${inputId}.png`; // Default to PNG format
                     link.href = URL.createObjectURL(blob);
                     link.click();
-                    URL.revokeObjectURL(link.href); // Clean up
-                }, 'image/png'); // You can change the format to 'image/jpeg' if needed
+                    URL.revokeObjectURL(link.href); 
+                }, 'image/png'); 
             };
         };
 
@@ -53,7 +53,7 @@ function downloadFile(inputId) {
         link.download = file.name;
         link.href = URL.createObjectURL(file);
         link.click();
-        URL.revokeObjectURL(link.href); // Clean up
+        URL.revokeObjectURL(link.href);
     } else {
         alert('Please select a file first.');
     }
